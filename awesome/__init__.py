@@ -19,8 +19,10 @@ def fib(n):
 def coala(k):
     return k * k
 
-# Adding some comments
-
 
 def k(l):
     return 2 * l
+
+
+def sample_function():
+    return "Arr" * 100
