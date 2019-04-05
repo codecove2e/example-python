@@ -6,6 +6,10 @@ def frown():
     return ":("
 
 
+def shieeee(g):
+    return f"\\{g}/"
+
+
 def fib(n):
     if n < 2:
         return 1
