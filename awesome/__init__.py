@@ -26,3 +26,8 @@ def k(l):
 
 def sample_function():
     return "Arr" * 100
+
+
+def ha_number_2():
+    return "HA" + str(2)
+
