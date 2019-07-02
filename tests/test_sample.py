@@ -11,3 +11,4 @@ def test_fib():
 
 def test_fib_second():
     assert awesome.fib(3) == 3
+    assert awesome.fib(5) == 8
