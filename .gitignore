@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+.coverage
+coverage.xml
+
 # Distribution / packaging
 .Python
 build/
@@ -26,6 +29,8 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+coverage.xml
+.coverage
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -121,3 +126,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+local.sh
