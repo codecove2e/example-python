@@ -9,6 +9,9 @@ test:
 report.local:
 	./local.sh -t ${local_token} -F flagsecond
 
+report.production:
+	./production.sh -t ${production_token} -F flagproduction
+
 show_vars:
 	echo ${local_token}
 	echo ${production_token}
@@ -18,6 +21,15 @@ full.local:
 	${MAKE} test
 	${MAKE} report.local
 
+full.production:
+	${MAKE} download_production
+	${MAKE} test
+	${MAKE} report.production
+
 download_local:
 	curl -s http://localhost/bash > local.sh
 	chmod +x ./local.sh
+
+download_production:
+	curl -s https://codecov.io/bash > production.sh
+	chmod +x ./production.sh
