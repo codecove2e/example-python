@@ -6,30 +6,30 @@ test:
 	rm .coverage || true
 	python -m pytest --cov=./
 
-report.local:
+local.report:
 	./local.sh -t ${local_token} -F flagsecond
 
-report.production:
+production.report:
 	./production.sh -t ${production_token} -F flagproduction
 
 show_vars:
 	echo ${local_token}
 	echo ${production_token}
 
-full.local:
-	${MAKE} download_local
+local.full:
+	${MAKE} local.download
 	${MAKE} test
-	${MAKE} report.local
+	${MAKE} local.report
 
-full.production:
-	${MAKE} download_production
+production.full:
+	${MAKE} production.download
 	${MAKE} test
-	${MAKE} report.production
+	${MAKE} production.report
 
-download_local:
+local.download:
 	curl -s http://localhost/bash > local.sh
 	chmod +x ./local.sh
 
-download_production:
+production.download:
 	curl -s https://codecov.io/bash > production.sh
 	chmod +x ./production.sh
