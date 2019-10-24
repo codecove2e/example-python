@@ -6,8 +6,16 @@ test:
 	rm .coverage || true
 	python -m pytest --cov=./
 
+test.flagone:
+	rm coverage.xml || true
+	rm .coverage || true
+	python -m pytest --cov=./ tests/test_number_two.py
+
 local.report:
 	./local.sh -t ${local_token} -F flagsecond
+
+local.report.flagone:
+	./local.sh -t ${local_token} -F flagone
 
 production.report:
 	./production.sh -t ${production_token} -F flagproduction
@@ -20,6 +28,8 @@ local.full:
 	${MAKE} local.download
 	${MAKE} test
 	${MAKE} local.report
+	${MAKE} test.flagone
+	${MAKE} local.report.flagone
 
 production.full:
 	${MAKE} production.download
