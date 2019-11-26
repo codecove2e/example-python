@@ -12,10 +12,10 @@ test.flagone:
 	python -m pytest --cov=./ tests/test_number_two.py
 
 local.report:
-	./local.sh -t ${local_token} -F flagsecond
+	./local.sh -t ${local_token} -F flagsecond -parent 17a71a9a2f5335ed4d00496c7bbc6405f547a527
 
 local.report.flagone:
-	./local.sh -t ${local_token} -F flagone
+	./local.sh -t ${local_token} -F flagone -parent 17a71a9a2f5335ed4d00496c7bbc6405f547a527
 
 production.report:
 	./production.sh -t ${production_token} -F flagproduction
