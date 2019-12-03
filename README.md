@@ -1,6 +1,1 @@
-print('filet8')
-LINE 42a08e00-de6e-4dbe-9cda-e2cc7bb7f509
-LINE 1cfc902c-51ad-46dc-8f54-fa4d9478a1d5
-LINE b4d5a1b8-2de3-4754-854d-1196fc786764
-LINE 2721d1e0-05e2-491b-90fa-0b3c323fb9ff
-LINE 1d0b44fa-1686-4bba-9a2b-47891305bf7d
+TEST1
