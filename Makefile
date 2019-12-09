@@ -20,10 +20,6 @@ local.report.flagone:
 production.report:
 	./production.sh -t ${production_token} -F flagproduction
 
-show_vars:
-	echo ${local_token}
-	echo ${production_token}
-
 local.full:
 	${MAKE} local.download
 	${MAKE} test
