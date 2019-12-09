@@ -8,3 +8,7 @@ def test_something():
 
 def test_a():
     assert fib(2) == 0
+
+
+def test_nothing():
+    assert True
