@@ -24,3 +24,9 @@ def sample_function():
 
 def ha_number_2():
     return "HA" + str(2)
+
+
+class ClassCode(object):
+
+    def __init__(self, context):
+        self.context = context
