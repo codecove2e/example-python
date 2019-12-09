@@ -1,4 +1,5 @@
 import awesome
+from awesome.code_fib import fib
 
 
 def test_something():
@@ -6,12 +7,12 @@ def test_something():
 
 
 def test_fib():
-    assert awesome.fib(1) == 1
+    assert fib(1) == 1
 
 
 def test_fib_second():
-    assert awesome.fib(3) == 3
-    assert awesome.fib(5) == 8
+    assert fib(3) == 3
+    assert fib(5) == 8
 
 
 def test_something_wrong():
