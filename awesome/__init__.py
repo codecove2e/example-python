@@ -20,8 +20,8 @@ def coala(k):
     return k * k
 
 
-def k(l):
-    return 2 * l
+def k(var):
+    return 2 * var
 
 
 def sample_function():

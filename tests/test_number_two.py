@@ -1,5 +1,5 @@
 import awesome
-from awesome.code_fib import fib
+from awesome.code_fib_renamed import fib
 
 
 def test_something():
