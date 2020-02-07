@@ -20,6 +20,10 @@ parsers:
       method: no
       macro: no
 
+flags:
+  flagone:
+    carryforward: true
+
 comment:
   layout: "header, diff"
   behavior: default
