@@ -4,12 +4,12 @@ production_token = ${PRODUCTION_TOKEN}
 test:
 	rm coverage.xml || true
 	rm .coverage || true
-	python -m pytest --cov=./
+	python -m pytest --cov=./ --cov-report=xml:flagtwo.coverage.xml
 
 test.flagone:
 	rm coverage.xml || true
 	rm .coverage || true
-	python -m pytest --cov=./ tests/test_number_two.py
+	python -m pytest --cov=./ tests/test_number_two.py --cov-report=xml:flagone.coverage.xml
 
 local.report:
 	./local.sh -t ${local_token} -F flagsecond
@@ -18,10 +18,10 @@ local.report.flagone:
 	./local.sh -t ${local_token} -F flagone
 
 production.report:
-	./production.sh -t ${production_token} -F flagtwo
+	./production.sh -t ${production_token} -F flagtwo  -f flagtwo.coverage.xml
 
 production.report.flagone:
-	./production.sh -t ${production_token} -F flagone
+	./production.sh -t ${production_token} -F flagone  -f flagone.coverage.xml
 
 local.full:
 	${MAKE} local.download
