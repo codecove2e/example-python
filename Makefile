@@ -18,7 +18,10 @@ local.report.flagone:
 	./local.sh -t ${local_token} -F flagone
 
 production.report:
-	./production.sh -t ${production_token} -F flagproduction
+	./production.sh -t ${production_token} -F flagone
+
+production.report.flagone:
+	./production.sh -t ${local_token} -F flagone
 
 local.full:
 	${MAKE} local.download
@@ -29,6 +32,8 @@ local.full:
 
 production.full:
 	${MAKE} production.download
+	${MAKE} test.flagone
+	${MAKE} production.report.flagone
 	${MAKE} test
 	${MAKE} production.report
 
