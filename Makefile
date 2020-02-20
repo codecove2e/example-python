@@ -18,7 +18,7 @@ local.report.flagone:
 	./local.sh -t ${local_token} -F flagone
 
 production.report:
-	./production.sh -t ${production_token}
+	./production.sh -t ${production_token} -F flagtwo
 
 production.report.flagone:
 	./production.sh -t ${production_token} -F flagone
