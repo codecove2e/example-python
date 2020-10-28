@@ -9,7 +9,16 @@ coverage:
   range: "70...100"
 
   status:
-    project: yes
+    project:
+      default: yes
+      unit:
+        target: auto
+        flags:
+          - unit
+      integration:
+        target: auto
+        flags:
+          - integration
     patch: yes
     changes: no
 
@@ -22,7 +31,9 @@ parsers:
       macro: no
 
 flags:
-  flagone:
+  flag:
+    carryforward: true
+  flagonebaby:
     carryforward: true
 
 comment:

@@ -8,6 +8,11 @@ __pycache__/
 
 .coverage
 coverage.xml
+flagone.coverage.xml
+flagtwo.coverage.xml
+unit.coverage.xml
+dev.sh
+direct.sh
 
 # Distribution / packaging
 .Python
