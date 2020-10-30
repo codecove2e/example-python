@@ -37,7 +37,7 @@ flags:
     carryforward: true
 
 comment:
-  layout: "header, diff"
+  layout: "header, diff, footer"
   behavior: default
   require_changes: no
   require_base: no
