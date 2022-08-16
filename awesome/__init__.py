@@ -3,7 +3,7 @@ def smile():
 
 
 def frown():
-    return "=("
+    return "==("
 
 
 def shieeee(g):
