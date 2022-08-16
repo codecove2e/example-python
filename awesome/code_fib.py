@@ -7,4 +7,5 @@ def fib(n):
 
 
 def untested_code(a):
+    print("Some")
     raise Exception()
